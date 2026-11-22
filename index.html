@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LappeLabs</title>
+<meta name="description" content="LappeLabs builds open source tools for people who keep notes and code in plain files.">
+<link rel="canonical" href="https://lappelabs.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LappeLabs">
+<meta property="og:description" content="Open source tools for people who keep notes and code in plain files.">
+<meta property="og:url" content="https://lappelabs.dev/">
+<meta name="theme-color" content="#F4F9FD" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#13304F" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    --bg: #F4F9FD; --surface: #E6F1FB; --ink: #1F3A5C; --muted: #4A6480; --line: #BFDBF2; --accent: #2563AD; --focus: #4885CC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #13304F; --surface: #1B3C61; --ink: #E6F0FA; --muted: #B5CDE6; --line: #34628A; --accent: #9CC6EC; --focus: #9CC6EC; color-scheme: dark; }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: clamp(48px, 12vh, 140px) clamp(16px, 5vw, 40px) 64px; }
+  h1 { font-size: clamp(40px, 8vw, 72px); line-height: 1.03; letter-spacing: -0.04em; margin: 0 0 20px; }
+  h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 56px 0 14px; }
+  p { margin: 0 0 16px; max-width: 58ch; }
+  .lede { font-size: 20px; color: var(--muted); }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+  .project { display: block; padding: 22px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); text-decoration: none; color: var(--ink); }
+  .project:hover { border-color: var(--accent); }
+  .project strong { display: block; font-size: 22px; letter-spacing: -0.02em; margin-bottom: 4px; }
+  .project span { color: var(--muted); }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>LappeLabs</h1>
+  <p class="lede">Open source tools for people who keep notes and code in plain files.</p>
+
+  <h2>Projects</h2>
+  <a class="project" href="https://lynter.dev">
+    <strong>Lynter</strong>
+    <span>Lint and fix notes and code from one <code>lynter.yaml</code>: a Rust core, a command line, and an Obsidian plugin.</span>
+  </a>
+
+  <footer>
+    <p>Source on <a href="https://github.com/klappe-pm">GitHub</a>. &copy; 2026 LappeLabs LLC.</p>
+  </footer>
+</main>
+</body>
+</html>
